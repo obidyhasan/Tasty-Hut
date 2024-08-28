@@ -13,6 +13,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <!-- Font Box Icon CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
     
 
     <style>
@@ -21,8 +27,38 @@
             font-family: "Poppins", sans-serif;
         }
 
-        .primary-color{
-            color: #FFC107;
+        p{
+            font-size: 13px;
+        }
+
+        .big-font{
+            font-size: 2rem;
+        }
+
+        .max-width{
+            max-width: 1400px;
+        }
+
+        .form-max{
+            max-width: 580px;
+        }
+        
+        .home-bg{
+            background-image: linear-gradient(rgba(16,15,15,70%),rgba(16,15,15,70%)),url("assets/banner_1.png");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        /* Responsive */
+        @media screen and (min-width: 576px) {
+            p{
+                font-size: 14px;
+            }
+
+            .big-font{
+                font-size: 3rem;
+            }
         }
 
     </style>
@@ -31,13 +67,71 @@
 <body>
 
     <!-- Navbar Section -->
-    <section>
-        <nav></nav>
+    <section class="bg-white">
+        <nav class="max-width mx-auto">
+            <nav class="navbar navbar-expand-lg bg-white">
+                <div class="container-fluid px-4 py-2">
+                    
+                  <a class="navbar-brand" href="#"><img src="./assets/Tasty_HUT.png" alt=""></a>
+
+                  <button class="border-0 bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="d-lg-none"><i class="fa-solid fa-bars fs-5"></i></span>
+                  </button>
+                  <div class="collapse navbar-collapse " id="navbarSupportedContent">
+
+                    
+
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
+
+                      <li class="nav-item px-2">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                      </li>
+
+                      <li class="nav-item px-2">
+                        <a class="nav-link" href="#">About Us</a>
+                      </li>
+
+                      <li class="nav-item px-2">
+                        <a class="nav-link" href="#">Product</a>
+                      </li>
+
+                      <li class="nav-item px-2">
+                        <a class="nav-link" href="#">Blog</a>
+                      </li>
+
+                      <li class="nav-item px-2">
+                        <a class="nav-link" href="#">Contact Us</a>
+                      </li>
+
+                    </ul>
+
+                    <button style="padding: 10px 0;" class="btn bg-warning fw-bold px-4 ">Sign Up</button>
+                    
+                  </div>
+                </div>
+              </nav>
+        </nav>
     </section>
 
 
+    <!-- <input type="text" class="form-control" placeholder="Search any food" aria-label="Recipient's username" aria-describedby="button-addon2"> -->
+
     <!-- Header Section -->
-    <header>
+    <header class="home-bg">
+
+        <section class="max-width mx-auto px-4 text-white text-center" style="padding-top: 150px; padding-bottom: 150px;">
+            <h1 class="fw-semibold big-font">Taste Our Delicious<br>Best Foods</h1>
+            <p class="fw-light mt-4 form-max mx-auto">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected home.</p>
+            <div class="input-group mb-3 form-max mx-auto bg-white rounded-3 mt-4">
+
+                <div class="input-group flex-nowrap">
+                    <span class="input-group-text bg-white fs-5 pe-2 text-black-50" id="addon-wrapping"><i class='bx bx-search'></i></span>
+                    <input type="text" class="form-control border-0 ps-0" placeholder="Search any food" aria-label="Username" aria-describedby="addon-wrapping">
+                    <button class="btn btn-warning fw-bold px-4 rounded-3" style="padding: 12px 0;" type="button" id="button-addon2">Search</button>
+                </div>
+
+            </div>
+        </section>
 
     </header>
 
