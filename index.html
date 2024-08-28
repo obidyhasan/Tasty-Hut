@@ -25,14 +25,22 @@
 
         *{
             font-family: "Poppins", sans-serif;
+            box-sizing: border-box;
         }
 
-        p{
+        p,
+        a{
             font-size: 13px;
         }
 
+        li{
+            font-size: 16px;
+            font-weight: 500;
+            color: rgba(48, 48, 48, 0.778)
+        }
+
         .big-font{
-            font-size: 2rem;
+            font-size: 2.2rem;
         }
 
         .max-width{
@@ -42,12 +50,20 @@
         .form-max{
             max-width: 580px;
         }
+
+        h6{
+            font-size: 20px;
+        }
         
         .home-bg{
             background-image: linear-gradient(rgba(16,15,15,70%),rgba(16,15,15,70%)),url("assets/banner_1.png");
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
+        }
+
+        .footer-bg{
+            background-color: rgba(255, 193, 7, 5%);
         }
 
         /* Responsive */
@@ -57,7 +73,17 @@
             }
 
             .big-font{
-                font-size: 3rem;
+                font-size: 3.2rem;
+            }
+        }
+
+        @media screen and (min-width: 768px) {
+            p{
+                font-size: 14px;
+            }
+
+            .big-font{
+                font-size: 4rem;
             }
         }
 
@@ -67,7 +93,7 @@
 <body>
 
     <!-- Navbar Section -->
-    <section class="bg-white">
+    <section class="bg-white position-sticky top-0 z-3">
         <nav class="max-width mx-auto">
             <nav class="navbar navbar-expand-lg bg-white">
                 <div class="container-fluid px-4 py-2">
@@ -113,9 +139,6 @@
         </nav>
     </section>
 
-
-    <!-- <input type="text" class="form-control" placeholder="Search any food" aria-label="Recipient's username" aria-describedby="button-addon2"> -->
-
     <!-- Header Section -->
     <header class="home-bg">
 
@@ -137,15 +160,205 @@
 
 
     <!-- Main Section -->
-    <main>
+    <main class="max-width mx-auto px-4" style="padding-top: 80px; padding-bottom: 80px;">
+
+        <h2 class="text-center fw-semibold fs-2">Your Favourite Food</h2>
+
+        <!-- container -->
+        <div class="mt-5 row g-0 gap-3">
+
+            <div class="row g-0 gap-3">
+                
+                <!-- item -->
+                <div class="card col-md col-12" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <div class="row g-0">
+                        <div class="col-sm-5">
+                            <img src="./assets/img2.png" class="img-fluid rounded w-100 h-100 object-fit-cover" alt="...">
+                        </div>
+                        <div class="col-sm-7">
+                        <div class="card-body d-flex flex-column justify-content-center h-100 py-md-5 py-3">
+                            <h5 class="card-title fw-bold fs-5">Chicken Handi</h5>
+                            <p class="card-text">There are many variations of passages of available, but the majority have suffered</p>
+                            <a href="#" class="fw-semibold text-warning">View Details</a>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            
+                
+                <!-- item -->
+                <div class="card col-md col-12" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <div class="row g-0">
+                        <div class="col-sm-5">
+                            <img src="./assets/img4.png" class="img-fluid rounded w-100 h-100 object-fit-cover" alt="...">
+                        </div>
+                        <div class="col-sm-7">
+                        <div class="card-body d-flex flex-column justify-content-center h-100 py-md-5 py-3">
+                            <h5 class="card-title fw-bold fs-5">Chicken Handi</h5>
+                            <p class="card-text">There are many variations of passages of available, but the majority have suffered</p>
+                            <a href="#" class="fw-semibold text-warning">View Details</a>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            
+
+            </div>
+
+            <div class="row g-0 gap-3">
+                
+                <!-- item -->
+                <div class="card col-md col-12" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <div class="row g-0">
+                        <div class="col-sm-5">
+                            <img src="./assets/img3.png" class="img-fluid rounded w-100 h-100 object-fit-cover" alt="...">
+                        </div>
+                        <div class="col-sm-7">
+                        <div class="card-body d-flex flex-column justify-content-center h-100 py-md-5 py-3">
+                            <h5 class="card-title fw-bold fs-5">Chicken Handi</h5>
+                            <p class="card-text">There are many variations of passages of available, but the majority have suffered</p>
+                            <a href="#" class="fw-semibold text-warning">View Details</a>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            
+                
+                <!-- item -->
+                <div class="card col-md col-12" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <div class="row g-0">
+                        <div class="col-sm-5">
+                            <img src="./assets/img5.png" class="img-fluid rounded w-100 h-100 object-fit-cover" alt="...">
+                        </div>
+                        <div class="col-sm-7">
+                        <div class="card-body d-flex flex-column justify-content-center h-100 py-md-5 py-3">
+                            <h5 class="card-title fw-bold fs-5">Chicken Handi</h5>
+                            <p class="card-text">There are many variations of passages of available, but the majority have suffered</p>
+                            <a href="#" class="fw-semibold text-warning">View Details</a>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            
+
+            </div>
+
+            <div class="row g-0 gap-3">
+                
+                <!-- item -->
+                <div class="card col-md col-12" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <div class="row g-0">
+                        <div class="col-sm-5">
+                            <img src="./assets/img6.png" class="img-fluid rounded w-100 h-100 object-fit-cover" alt="...">
+                        </div>
+                        <div class="col-sm-7">
+                        <div class="card-body d-flex flex-column justify-content-center h-100 py-md-5 py-3">
+                            <h5 class="card-title fw-bold fs-5">Chicken Handi</h5>
+                            <p class="card-text">There are many variations of passages of available, but the majority have suffered</p>
+                            <a href="#" class="fw-semibold text-warning">View Details</a>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            
+                
+                <!-- item -->
+                <div class="card col-md col-12" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <div class="row g-0">
+                        <div class="col-sm-5">
+                            <img src="./assets/img1.png" class="img-fluid rounded w-100 h-100 object-fit-cover" alt="...">
+                        </div>
+                        <div class="col-sm-7">
+                        <div class="card-body d-flex flex-column justify-content-center h-100 py-md-5 py-3">
+                            <h5 class="card-title fw-bold fs-5">Chicken Handi</h5>
+                            <p class="card-text">There are many variations of passages of available, but the majority have suffered</p>
+                            <a href="#" class="fw-semibold text-warning">View Details</a>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            
+
+            </div>
+
+        </div>
+
+        <div class="text-center mt-5">
+            <button class="btn btn-warning px-4 fw-bold" style="padding: 12px 0;">Show All</button>
+        </div>
 
     </main>
 
 
     <!-- Footer Section -->
-    <footer>
+    <footer class="footer-bg">
+
+        <section class="max-width mx-auto px-4 g-0 row row-cols-sm-2 row-cols-md-3 row-cols-lg-4" style="padding: 60px 0;">
+
+            <div class="list-unstyled col-12 col-lg-2 mt-4">
+                <h6 class="fw-semibold">Section</h6>
+                <li class="mt-4">Home</li>
+                <li class="mt-2">Features</li>
+                <li class="mt-2">Pricing</li>
+                <li class="mt-2">FAQs</li>
+            </div>
+
+
+            <div class="list-unstyled col-12 col-lg-3 mt-4">
+                <h6 class="fw-semibold">Section</h6>
+                <li class="mt-4">UIUX Design</li>
+                <li class="mt-2">Product Design</li>
+                <li class="mt-2">Back End Developer</li>
+                <li class="mt-2">Front End Developer</li>
+            </div>
+
+
+            <div class="list-unstyled col-12 col-lg-3 mt-4">
+                <h6 class="fw-semibold">Resource</h6>
+                <li class="mt-4">FAQ</li>
+                <li class="mt-2">Support</li>
+                <li class="mt-2">Privacy Policy</li>
+                <li class="mt-2">Terms of Service  </li>
+            </div>
+
+
+            <div class="list-unstyled col-12 col-lg-4 mt-4">
+                <h6 class="fw-semibold">Subscribe to our newsletter</h6>
+                <p class="text-black-50 mt-4 mb-4">There are many variations of passages of available, but the majority have suffered</p>
+                <div class="input-group">
+                    <input type="text" class="form-control me-2 py-3 bg-transparent rounded" placeholder="Email address" aria-label="Recipient's username" aria-describedby="button-addon2">
+                    <button class="btn btn-warning fw-bold px-3 rounded" type="button" id="button-addon2">Subscribe</button>
+                  </div>
+            </div>
+
+        </section>
 
     </footer>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h1 class="modal-title fs-5 fw-bold" id="exampleModalLabel">Chicken Handi</h1>
+            <button type="button" class="btn-close " data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <img src="./assets/img2.png" class="img-fluid rounded" alt="">
+                <p class="mt-4"><span class="fw-semibold">Category: </span>Chicken</p>
+                <p class="mt-2"><span class="fw-semibold">Area: </span>Japanese</p>
+                <p class="mt-2"><span class="fw-semibold">Instructions: </span>AThere are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. </p>
+                <p class="mt-2"><span class="fw-semibold">Youtube: </span>https://www.youtube.com/watch?v=WnpbKoYhTEY</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger fw-medium" style="font-size: 13px;" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+        </div>
+    </div>
+    
+
 
     <!-- Bootstrap Script -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
